@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <head>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1"></meta>
+        <title>Login/Sign</title>
+        <link href="/Emlakbizde/resources/css/bootstrap.css" rel="stylesheet"></link>
+        <!-- Loading main css file -->
+        <link rel="stylesheet" href="/Emlakbizde/resources/style.css"></link>
+    </head>
+    <body>
+        <div id="site-content">
+            <header class="site-header">
+                <div class="container">
+                    <a href="/Emlakbizde/index.xhtml" id="branding">
+                        <img src="/Emlakbizde/resources/images/logoo.png" alt="Site Title" width="250px" height="150px"></img>
+                        <small class="site-description">Emlakbizde</small>
+                    </a> <!-- #branding -->
+                    <nav class="main-navigation">
+                        <button type="button" class="toggle-menu"><i class="fa fa-bars"></i></button>
+                        <h:form>
+                            <ul class="menu">
+                                <li class="menu-item"><a href="/Emlakbizde/">Home</a></li>
+                                <li class="menu-item "><a href="/Emlakbizde/login.xhtml">Sign</a></li>
+                            </ul> <!-- .menu -->
+                        </h:form>
+                    </nav> <!-- .main-navigation -->
+                    <div class="mobile-menu"></div>
+                </div>
+            </header> <!-- .site-header -->
+
+            <div class="hero">
+                <div class="slider">
+                    <ul class="slides">
+                        <li class="lazy-bg" data-background="/Emlakbizde/resources/images/emlak.resim.jpg">                                            
+                            <div class="container">
+
+                                <div style="margin-left: 200px;margin-top: -100px">
+                                    <h:form >                           
+                                        <div style="margin-left: -200px">
+                                            <h:graphicImage width="250px" height="200px" style="border-radius: 150px;margin-top:10px"/>                                                                                                      
+                                        </div>
+                                    </h:form>
+                                </div>
+                                <div class="col-md-8" style="padding-bottom: 400px;padding-top:0px;margin-left: 200px">
+                                    <h:form class="form-control"  style="background-color: aqua;border-radius: 50px">                  
+                                        <h:panelGrid columns="2">    
+                                            <f:facet name="header">                                     
+                                                <h:outputLabel  style="width: 500px;font-style: italic;font-size: large;color: red;"/>
+                                            </f:facet>
+                                            <h:outputLabel value=""/>  
+                                            <h:outputLabel value=""/> 
+                                            <h:outputLabel value="username :"/>
+                                            <h:inputText id="usern"  class="form-control" style="max-width: 200px"/>                       
+                                            <h:outputLabel value="password :" />
+                                            <h:inputSecret id="passw"  class="form-control " style="max-width: 200px"/>
+                                            <h:outputLabel value=""/>  
+                                            <h:outputLabel value=""/>  
+                                            <h:outputLabel value=""/>  
+                                            <h:commandButton value="Login" styleClass="btn-lg btn-primary" />                             
+                                            <h:outputLabel value=""/> <h:outputLabel value=""/>  <h:outputLabel value=""/>        
+                                            <h:outputLabel value=""/>  <h:outputLabel value=""/>  <h:outputLabel value=""/>  
+                                        </h:panelGrid>                
+                                    </h:form>     
+                                </div>
+                            </div>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>    
+        </div> <!-- #site-content -->
+        <script src="/Emlakbizde/resources/js/jquery-1.11.1.min.js"></script>		
+        <script src="/Emlakbizde/resources/js/plugins.js"></script>
+        <script src="/Emlakbizde/resources/js/app.js"></script>
+        <script src="/Emlakbizde/resources/js/jquery-3.3.1.min.js"></script>
+        <script src="/Emlakbizde/resources/js/bootstrap.js"></script>
+    </body>
+
+</html>
