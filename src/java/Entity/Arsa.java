@@ -11,6 +11,10 @@ public class Arsa extends Mulk{
         this.m_kare = m_kare;
     }
 
+    public Arsa() {
+    }
+    
+
     public float getM_kare() {
         return m_kare;
     }

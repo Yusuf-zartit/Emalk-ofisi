@@ -17,6 +17,10 @@ public class Konut extends Mulk{
         this.isitma = isitma;      // var mı yok mu
     }
 
+    public Konut() {
+    }
+    
+
     public int getOda_sayisi() {
         return oda_sayisi;
     }

@@ -15,6 +15,10 @@ public class İsYeri extends Mulk{
         this.bina_yasi = bina_yasi;
     }
 
+    public İsYeri() {
+    }
+    
+
     public String getIsitma() {
         return isitma;
     }
