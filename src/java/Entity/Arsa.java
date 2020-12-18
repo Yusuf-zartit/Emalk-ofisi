@@ -4,24 +4,29 @@ package Entity;
  *
  * @author yusef
  */
-public class Arsa extends Mulk{
-    private float m_kare;
+public class Arsa extends Mulk {
 
-    public Arsa(float m_kare) {
-        this.m_kare = m_kare;
+    private String konum;
+
+    public Arsa(String konum, float metra_kare, int id, double fiyat, String adres, String emalk_tipi) {
+        super(id, metra_kare, fiyat, adres, emalk_tipi);
+        this.konum = konum;
+    }
+
+    public Arsa(String konum, float metra_kare, double fiyat, String adres, String emalk_tipi) {
+        super(metra_kare, fiyat, adres, emalk_tipi);
+        this.konum = konum;
     }
 
     public Arsa() {
     }
-    
 
-    public float getM_kare() {
-        return m_kare;
+    public String getKonum() {
+        return konum;
     }
 
-    public void setM_kare(float m_kare) {
-        this.m_kare = m_kare;
+    public void setKonum(String konum) {
+        this.konum = konum;
     }
-    
-    
+
 }
