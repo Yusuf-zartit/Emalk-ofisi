@@ -1,10 +1,22 @@
 package Entity;
 
-public class Daire extends Konut{
+public class Daire extends Konut {
+
     private String bulundugu_kat;
     private int banyo_sayısı;
 
-    public Daire(String bulundugu_kat, int banyo_sayısı) {
+    public Daire(String bulundugu_kat, int banyo_sayısı, int id, float metra_kare,
+            double fiyat, String adres, String emalk_tipi, int oda_sayisi, String yapi_durumu,
+            String esyali, String isitma) {
+        super(oda_sayisi, yapi_durumu, esyali, isitma, id, metra_kare, fiyat, adres, emalk_tipi);
+        this.bulundugu_kat = bulundugu_kat;
+        this.banyo_sayısı = banyo_sayısı;
+    }
+
+    public Daire(String bulundugu_kat, int banyo_sayısı, float metra_kare,
+            double fiyat, String adres, String emalk_tipi, int oda_sayisi, String yapi_durumu,
+            String esyali, String isitma) {
+        super(oda_sayisi, yapi_durumu, esyali, isitma, metra_kare, fiyat, adres, emalk_tipi);
         this.bulundugu_kat = bulundugu_kat;
         this.banyo_sayısı = banyo_sayısı;
     }
@@ -24,6 +36,5 @@ public class Daire extends Konut{
     public void setBanyo_sayısı(int banyo_sayısı) {
         this.banyo_sayısı = banyo_sayısı;
     }
-    
-    
+
 }

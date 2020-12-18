@@ -4,13 +4,25 @@ package Entity;
  *
  * @author yusef
  */
-public class Konut extends Mulk{
+public class Konut extends Mulk {
+
     private int oda_sayisi;
     private String yapi_durumu;
     private String esyali;
     private String isitma;
 
-    public Konut(int oda_sayisi, String yapi_durumu, String esyali, String isitma) {
+    public Konut(int oda_sayisi, String yapi_durumu, String esyali, String isitma,
+             int id, float metra_kare, double fiyat, String adres, String emalk_tipi) {
+        super(id, metra_kare, fiyat, adres, emalk_tipi);
+        this.oda_sayisi = oda_sayisi;
+        this.yapi_durumu = yapi_durumu;   //kıralık verilmiş mi yoksa daha boş mu
+        this.esyali = esyali;     // var mı yok mu
+        this.isitma = isitma;      // var mı yok mu
+    }
+
+    public Konut(int oda_sayisi, String yapi_durumu, String esyali, String isitma,
+             float metra_kare, double fiyat, String adres, String emalk_tipi) {
+        super(metra_kare, fiyat, adres, emalk_tipi);
         this.oda_sayisi = oda_sayisi;
         this.yapi_durumu = yapi_durumu;   //kıralık verilmiş mi yoksa daha boş mu
         this.esyali = esyali;     // var mı yok mu
@@ -19,7 +31,6 @@ public class Konut extends Mulk{
 
     public Konut() {
     }
-    
 
     public int getOda_sayisi() {
         return oda_sayisi;
@@ -52,6 +63,5 @@ public class Konut extends Mulk{
     public void setIsitma(String isitma) {
         this.isitma = isitma;
     }
-    
-    
+
 }

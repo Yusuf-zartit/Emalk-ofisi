@@ -14,7 +14,7 @@ public abstract class DB {
     public Connection getConnect() {
         try {
             Class.forName("org.postgresql.Driver");
-            this.connect = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "123456");
+            this.connect = DriverManager.getConnection("jdbc:postgresql://localhost:5432/EmlakOfisi", "postgres", "123456");
 
         } catch (Exception e) {
             System.out.println(e.getMessage());

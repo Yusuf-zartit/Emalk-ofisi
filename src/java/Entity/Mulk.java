@@ -11,6 +11,13 @@ public class Mulk {
     private String adres;
     private String emalk_tipi;  // satlık mı kıralık mı
 
+    public Mulk(float metra_kare, double fiyat, String adres, String emalk_tipi) {
+        this.metra_kare = metra_kare;
+        this.fiyat = fiyat;
+        this.adres = adres;
+        this.emalk_tipi = emalk_tipi;
+    }
+
     public Mulk(int id, float metra_kare, double fiyat, String adres, String emalk_tipi) {
         this.id = id;
         this.metra_kare = metra_kare;
