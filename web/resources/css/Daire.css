@@ -1,0 +1,17 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 19, 2020, 12:44:53 PM
+    Author     : yusef
+*/
+
+body{
+    background-image: url(../images/resim1.jpg);
+    background-size: cover;
+    background-position: top;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
